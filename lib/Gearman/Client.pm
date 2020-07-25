@@ -245,7 +245,7 @@ sub get_job_server_status {
         "status\n",
         sub {
             my ($js, $line) = @_;
-            unless ($line =~ /^(\S+)\s+(\d+)\s+(\d+)\s+(\d+)$/) {
+            unless ($line =~ /^(.+)\s(\d+)\s+(\d+)\s+(\d+)$/) {
                 return;
             }
 
